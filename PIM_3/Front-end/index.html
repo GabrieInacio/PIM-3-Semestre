@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>PetVille</title>
+
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+
+    <div class="logo">
+      PetVille 
+    </div>
+
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#galeria">Galeria</a>
+      <a href="#contato">Contato</a>
+    </nav>
+
+    <button onclick="abrirLogin()">
+      Agendar
+    </button>
+
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+
+    <div class="hero-text">
+
+      <h1>Cuidamos do seu melhor amigo 🐶</h1>
+
+      <p>Banho, tosa e cuidados especiais para seu pet.</p>
+
+      <button onclick="abrirLogin()">
+        Agendar Agora
+      </button>
+
+    </div>
+
+  </section>
+
+  <!-- SERVIÇOS -->
+  <section class="servicos" id="servicos">
+
+    <h2>Nossos Serviços</h2>
+
+    <div class="cards">
+
+      <div class="card">
+        <h3>🛁 Banho</h3>
+        <p>Higiene completa para seu pet.</p>
+      </div>
+
+      <div class="card">
+        <h3>✂️ Tosa</h3>
+        <p>Tosa profissional e estilizada.</p>
+      </div>
+
+      <div class="card">
+        <h3>💉 Vacinação</h3>
+        <p>Cuidados veterinários completos.</p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- GALERIA -->
+  <section class="galeria" id="galeria">
+
+    <h2>Galeria</h2>
+
+    <div class="galeria-grid">
+
+      <img src="https://images.unsplash.com/photo-1517849845537-4d257902454a?q=80&w=1200">
+      <img src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?q=80&w=1200">
+      <img src="https://images.unsplash.com/photo-1517423440428-a5a00ad493e8?q=80&w=1200">
+      <img src="https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?q=80&w=1200">
+
+    </div>
+
+  </section>
+
+  <!-- CONTATO -->
+  <section class="contato" id="contato">
+
+    <h2>Contato</h2>
+
+    <div class="contato-box">
+
+      <p>📞 (11) 99999-9999</p>
+      <p>📍 São Paulo - SP</p>
+      <p>🕒 Seg à Sáb - 08h às 18h</p>
+
+      <div class="mapa">
+
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1538.4141229864908!2d-46.85132499131606!3d-23.49701224982685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1778953100658!5m2!1spt-BR!2sbr"
+          width="100%"
+          height="350"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy">
+        </iframe>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- MODAL DE AGENDAMENTO -->
+  <div class="modal" id="modal">
+
+    <div class="modal-box">
+
+      <span class="fechar" onclick="fecharLogin()">×</span>
+
+      <h2>Agendar Pet</h2>
+
+      <input id="nomePet" type="text" placeholder="Nome do pet">
+      <input id="servico" type="text" placeholder="Serviço">
+      <input id="dataHora" type="datetime-local">
+
+      <button type="button" onclick="agendar()">
+        Confirmar Agendamento
+      </button>
+
+      <p id="msg"></p>
+
+    </div>
+
+  </div>
+
+  <script src="js/script.js"></script>
+
+</body>
+</html>
